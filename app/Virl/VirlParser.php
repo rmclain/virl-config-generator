@@ -12,7 +12,7 @@ class VirlParser
 
     public function __construct($folder)
     {
-        $this->virlInput = storage_path('virl/virl.base.virl');
+        $this->virlInput = base_path('virl-configs/virl.base.virl');
         $this->folder    = $folder;
     }
 

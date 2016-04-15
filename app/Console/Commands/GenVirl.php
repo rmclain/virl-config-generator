@@ -41,7 +41,7 @@ class GenVirl extends Command
     {
         // Take the starting folder as input
         $folder = $this->argument('folder');
-        $list = File::directories(storage_path('virl').'/'.$folder);
+        $list = File::directories(base_path('virl-configs').'/'.$folder);
 
         $configs = [];
         foreach($list as $dir) {
